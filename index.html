@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="directives">
+
+<head>
+    <meta charset="utf-8">
+    <title>Directives</title>
+</head>
+
+<body ng-controller="mainCtrl">
+  <h1>Directives</h1>
+{{test}}
+
+    <confirmation-modal title="modalTitle" message="modalMessage" cancel-click-handler="modalConfirm()" confirm-click-handler="modalCancel()"></confirmation-modal>
+    <confirmation-modal title="modal2Title" message="modal2Message" cancel-click-handler="modalConfirm()" confirm-click-handler="modalCancel()"></confirmation-modal>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" charset="utf-8"></script>
+
+    <script src="app.js" charset="utf-8"></script>
+    <script src="controller.js" charset="utf-8"></script>
+    <script src="directive.js" charset="utf-8"></script>
+</body>
+
+</html>
